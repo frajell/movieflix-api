@@ -1,6 +1,5 @@
 [
-  {
-    "id": 1,
+  {    
     "title": "Batman Begins",
     "releaseYear": 2005,
     "length": "2 HR 14 MIN",
@@ -8,8 +7,7 @@
     "genre": "Action/Adventure",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
   },
-  {
-    "id": 2,
+  {   
     "title": "The Dark Knight",
     "releaseYear": 2008,
     "length": "2 HR 25 MIN",
@@ -17,8 +15,7 @@
     "genre": "Action/Adventure",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
   },
-  {
-    "id": 3,
+  {    
     "title": "The Bucket List",
     "releaseYear": 2007,
     "length": "1 HR 33 MIN",
@@ -26,8 +23,7 @@
     "genre": "Drama/Komedi",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTY2NTUyMjIyNF5BMl5BanBnXkFtZTYwNzYwMDM4._V1_SX300.jpg"
   },
-  {
-    "id": 4,
+  {    
     "title": "The Matrix Resurrections",
     "releaseYear": 2021,
     "length": "2 HR 27 MIN",
@@ -35,8 +31,7 @@
     "genre": "Action/Adventure/Sci-Fi",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMGJkNDJlZWUtOGM1Ny00YjNkLThiM2QtY2ZjMzQxMTIxNWNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg"
   },
-  {
-    "id": 5,
+  {    
     "title": "Sully",
     "releaseYear": 2016,
     "length": "1 HR 31 MIN",
@@ -44,8 +39,7 @@
     "genre": "Drama",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BY2NmZDAwM2QtZmFiMS00OTJlLTgxMTItZDMyZmVhYjE1MDY3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
   },
-  {
-    "id": 6,
+  {    
     "title": "The Shining",
     "releaseYear": 1980,
     "length": "1 HR 54 MIN",

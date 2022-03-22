@@ -1,28 +1,36 @@
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using movieflix_api.Models;
 
 namespace movieflix_api.Data
 {
-  public class LoadData
-  {
-    public static async Task<IEnumerable<Movie>> LoadMovies()
+    public class LoadData
     {
 
-      var options = new JsonSerializerOptions
-      {
-        PropertyNameCaseInsensitive = true
-      };
+        public static async Task LoadMovies(DataContext context)
+        {
 
-      var data = await File.ReadAllTextAsync("Data/movies.json");
-      var movies = JsonSerializer.Deserialize<List<Movie>>(data, options);
+            if (await context.Movies.AnyAsync())
+            {
+                return;
+            }
 
-      if (movies is not null)
-      {
-        return movies;
-      }
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
 
-      return new List<Movie>();
+            var data = await File.ReadAllTextAsync("Data/movies.json");
+            var movies = JsonSerializer.Deserialize<List<Movie>>(data, options);
 
+            if (movies is not null)
+            {
+                await context.AddRangeAsync(movies);
+                await context.SaveChangesAsync();
+            }
+
+
+
+        }
     }
-  }
 }
